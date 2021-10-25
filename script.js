@@ -20,7 +20,7 @@ function generatePassword() {
     return;
   }
 
-  var numbers= ("0123456789")
+  var numbers= ("0123456789");
   var LowerCaseCharacters = ("abcdefghijklmnopqrstuvxyz");
   var UppercaseCharacters = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
   var specialCharacters = ("!@#$%^&*()_+");
@@ -47,34 +47,16 @@ function generatePassword() {
     passCharacter += specialCharacters
   }
 
-  console.log(passCharacter)
+  console.log(passCharacter);
 
 
 //functions for password generation
   var finalPass = "";
   for (let i=0; i < passwordLength; i++) {
-    finalPass += passCharacter.charAt(Math.floor(Math.random() * passCharacter.length))
-    console.log(finalPass)
+    finalPass += passCharacter.charAt(Math.floor(Math.random() * passCharacter.length));
+
+    console.log(finalPass);
   }
-
-  return finalPass;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  return finalPass
+}
