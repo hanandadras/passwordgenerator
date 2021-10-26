@@ -26,10 +26,16 @@ function generatePassword() {
   var specialCharacters = ("!@#$%^&*()_+");
 
   var num = confirm ("do you want numbers in your password?");
+
   var LCaseCharacters = confirm ("do you want LowerCaseCharacters in your password?");
+
   var UcaseCharacters = confirm ("do you want UppercaseCharacters in your password?");
+
   var SCharacters = confirm ("do you want specialCharacters in your password?");
+
   var passCharacter = "";
+
+
 
   if (num) {
     passCharacter += numbers
@@ -60,3 +66,4 @@ function generatePassword() {
   
   return finalPass
 }
+document.getElementById("generate").addEventListener("click", writePassword)
